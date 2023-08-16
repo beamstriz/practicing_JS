@@ -26,6 +26,8 @@ esperaAi('Conexão com o BD', rand(1, 3))
     }).then(() => {
         console.log('Exibe dados na tela');
     })
-    .catch();
+    .catch( e => {
+        console.log('ERRO:', e)
+    });
 
 console.log('Isso aqui será exibido antes de qualquer promise.')
